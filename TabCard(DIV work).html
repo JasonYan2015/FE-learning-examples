@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type"	charset="utf-8">
+	<title>选项卡</title>
+	<style type="text/css">
+		#card #cardHead div
+		{
+			float: left;
+			border-top:solid 1px green;
+			margin-left: 5px;
+			color: white;
+			background-color: grey;
+			width: 65px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+		}
+		#card #cardHead
+		{
+			width: 300px;
+			height: 25px;
+		}
+		#card #cardTxt div
+		{
+			border:1px solid;
+			width: 300px;
+			height: 200px;
+			display: none;
+		}
+		#card #cardHead .active
+		{
+			background-color: green;
+			border-top: 2px black solid;
+			border-bottom: 4px white solid;
+		}
+	</style>
+</head>
+<body>
+<div id="card">
+	<div id="cardHead">
+		<div class="active">选项一</div>
+		<div>选项二</div>
+		<div>选项三</div>
+
+	</div>
+	<div id="cardTxt">
+		<div style="display: block;">内容一</div>
+		<div>内容二</div>
+		<div>内容三</div>
+	</div>
+</div>
+<script type="text/javascript">
+	window.onload=function()
+	{
+		var oCardHead=document.getElementById("cardHead");
+		var oCardTxt=document.getElementById("cardTxt");
+		var aCardHead=oCardHead.getElementsByTagName("div");
+		var aCardTxt=oCardTxt.getElementsByTagName("div");
+
+		for (var i =0;i<aCardHead.length;i++) 
+		{
+			aCardHead[i].index=i;
+			aCardHead[i].onclick=function()
+			{
+				for (var i=0;i<aCardHead.length;i++)
+				{
+					aCardHead[i].className='';
+					aCardTxt[i].style.display='none';				
+				};
+				this.className='active';
+				aCardTxt[this.index].style.display='block';
+			}
+		};
+	}
+</script>
+</body>
+</html>
