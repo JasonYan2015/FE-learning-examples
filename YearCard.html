@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" charset="utf-8">
+	<title>YearCard</title>
+	<style type="text/css">
+		#whole
+		{
+			position: absolute;
+			left: 50%;
+			margin-left: -150px;
+			width: 300px;
+			height: 610px;
+			background-color: #FDF7D9;
+			border: solid 5px #333333;
+		} 
+		#whole li
+		{
+			border: 1px solid #eeeeee;
+			float: left;
+			width: 98px;
+			height: 100px;
+			list-style: none;
+			text-align: center;
+		}
+		ul,li
+		{
+			margin:0px;
+			padding: 0px;
+			font-family: "微软雅黑";
+			display: inline-block;
+		}
+		h2
+		{
+			font-size: 36px;
+			line-height: 20px;
+			height: 5px;
+		}
+		#txt
+		{
+			background-color: white;
+			width: 280px;
+			height: 180px;
+			margin-left: -144px;
+			line-height: 20px;
+			border: 4px solid #E7E4CD;
+			display: inline-block;
+			position: absolute;
+			left: 50%;
+			top: 415px;
+			font-family: "微软雅黑";
+		}
+	</style>
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		var aTxt=
+		[
+			"<h4>&nbsp&nbsp第一站：</h4><p>&nbsp&nbsp&nbsp&nbsp哈尔滨<p>",
+			"<h4>&nbsp&nbsp第二站：</h4><p>&nbsp&nbsp&nbsp&nbsp沈阳<p>",
+			"<h4>&nbsp&nbsp第三站：</h4><p>&nbsp&nbsp&nbsp&nbsp上海<p>",
+			"<h4>&nbsp&nbsp第四站：</h4><p>&nbsp&nbsp&nbsp&nbsp北京<p>",
+			"<h4>&nbsp&nbsp第五站：</h4><p>&nbsp&nbsp&nbsp&nbsp长白山<p>",
+			"<h4>&nbsp&nbsp第六站：</h4><p>&nbsp&nbsp&nbsp&nbsp杭州<p>",
+			"<h4>&nbsp&nbsp第七站：</h4><p>&nbsp&nbsp&nbsp&nbsp云南<p>",
+			"<h4>&nbsp&nbsp第八站：</h4><p>&nbsp&nbsp&nbsp&nbsp西安<p>",
+			"<h4>&nbsp&nbsp第九站：</h4><p>&nbsp&nbsp&nbsp&nbsp湖北<p>",
+			"<h4>&nbsp&nbsp第十站：</h4><p>&nbsp&nbsp&nbsp&nbsp四川<p>",
+			"<h4>&nbsp&nbsp第十一站：</h4><p>&nbsp&nbsp&nbsp&nbsp南京<p>",
+			"<h4>&nbsp&nbsp第十二站：</h4><p>&nbsp&nbsp&nbsp&nbsp西藏<p>",
+		]
+		var aMonth=document.getElementsByTagName("li");
+		var oTxt=document.getElementById("txt")
+
+		for (var i = aMonth.length - 1; i >= 0; i--) {
+			aMonth[i].index=i;
+			aMonth[i].onmouseover=function()
+			{
+				this.style.background="grey";
+				oTxt.innerHTML=aTxt[this.index];
+			}
+			aMonth[i].onmouseout=function()
+			{
+				this.style.background="#FDF7D9";
+			}
+		};
+	}
+	</script>
+</head>
+<body>
+	<div id="whole">
+		<ul>
+			<li><h2>1</h2>JAN</li>
+			<li><h2>2</h2>FEB</li>
+			<li><h2>3</h2>MAR</li>
+			<li><h2>4</h2>APR</li>
+			<li><h2>5</h2>MAY</li>
+			<li><h2>6</h2>JUN</li>
+			<li><h2>7</h2>JUL</li>
+			<li><h2>8</h2>AUG</li>
+			<li><h2>9</h2>SEP</li>
+			<li><h2>10</h2>OCT</li>
+			<li><h2>11</h2>NOV</li>
+			<li><h2>12</h2>DEC</li>
+		</ul>
+		<div id="txt"></div>
+	</div>
+</body>
+</html>
