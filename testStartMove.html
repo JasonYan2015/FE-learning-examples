@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<style type="text/css">
+		#div1
+		{
+			width: 100px;
+			height: 100px;
+			background-color: #4DAEFF;
+			color: white;
+			text-align: center;
+			line-height: 100px;
+			font-family: "微软雅黑";
+			alpha(opacity: 33);
+			opacity: 0.33;
+		}
+	</style>
+	<script type="text/javascript"	src="startMove.js"></script>
+	<script type="text/javascript">
+	window.onload=function()
+	{
+		var oDiv=document.getElementById("div1");
+
+		oDiv.onmouseover=function(){
+			startMove(oDiv,'opacity','90');
+		}
+		oDiv.onmouseout=function(){
+			startMove(oDiv,'opacity','16');
+		}
+	}
+
+	</script>
+</head>
+<body>
+	<div id="div1">舞</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Share To</title>
+	<style type="text/css">
+		li
+		{
+			list-style: none;
+		}
+		#divl
+		{
+			width: 100px;
+			height:200px;
+			background-color: #FFD24C;
+			position: absolute;
+			top: 50%;
+			margin-top: -100px;
+			left: -100px;
+		}
+		#head
+		{
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
+			width: 21px;
+			height: 70px;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-right: -21px;
+			margin-top: -35px;
+			background-color: #FF5F5F;
+			color: white;
+			font-size: 20px;
+			font-family: "微软雅黑";
+			padding-left: -10px;
+			line-height: 110%;
+		}
+		.logo
+		{
+			width: 28px;
+			height: 28px;
+			background-color: white;
+			font-size: 12px;
+			display: inline-block;
+			text-align: center;
+			margin-top: 10px;
+			margin-right: 3px;
+		}
+		#divl ul 
+		{
+			position: absolute;
+			top: -12px;
+			left: -35px;
+			font-size: 12px;
+			font-family: "微软雅黑";
+			line-height: 28px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var dl=document.getElementById("divl");
+			var dr=document.getElementById("head");
+			var time1;
+
+			dl.onmouseover=function()
+			{	
+				clearInterval(time1);
+				time1=setInterval(function(){
+					var speed=(0-dl.offsetLeft)/7;
+					dl.style.left=dl.offsetLeft+Math.ceil(speed)+'px';
+				},30);
+			}
+			dl.onmouseout=function()
+			{
+				clearInterval(time1);
+				time1=setInterval(function(){
+					var speed=(-100-dl.offsetLeft)/7;
+					dl.style.left=dl.offsetLeft+Math.floor(speed)+'px';
+				},30);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="divl">
+	<div id="head">分享到</div>
+	<ul>
+		<li class="share"><div class="logo">图标</div>分享到XXX</li>
+		<li class="share"><div class="logo">图标</div>分享到XXX</li>
+		<li class="share"><div class="logo">图标</div>分享到XXX</li>
+		<li class="share"><div class="logo">图标</div>分享到XXX</li>
+		<li class="share"><div class="logo">图标</div>分享到XXX</li>
+	</ul>
+	</div>
+</body>
+</html>
