@@ -1,0 +1,14 @@
+package com.easy.test;
+
+public class Test3 {
+
+	//使用main方法才能启动程序
+	public static void main(String[] args) {
+		int a = 0;
+		Student student = new Student();
+		student.no = 100;
+		student.name = "Tom";
+		System.out.println(student.no);
+		System.out.println(student.name);
+	}
+}

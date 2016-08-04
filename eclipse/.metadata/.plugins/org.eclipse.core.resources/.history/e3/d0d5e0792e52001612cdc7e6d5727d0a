@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS onclick event</title>
+	<style type="text/css">
+	body
+	{
+		font-famliy:"微软雅黑";
+		position:absolute;
+		left:50%;
+		top:50%;
+		display:block;
+		margin-left:-200px;
+		margin-top:-150px;
+	}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var oBtn1=document.getElementById("100");
+			var oBtn2=document.getElementById("400");
+			var oBtn3=document.getElementById("exchange");
+			var aTxt=document.getElementsByTagName("input");
+			
+			oBtn1.onclick=function()
+			{
+				aTxt[0].value=100;
+			}
+			oBtn2.onclick=function()
+			{
+				aTxt[1].value=400;
+			}
+			oBtn3.onclick=function()
+			{
+				var temp=aTxt[0].value;
+				
+				aTxt[0].value=aTxt[1].value;
+				aTxt[1].value=temp;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<input type="text">
+	<button id="100">输入100</button><br>
+	<input type="text">
+	<button id="400">输入400</button><br>
+	<input type="text">
+	<button id="exchange">交换</button>
+</body>
+</html>

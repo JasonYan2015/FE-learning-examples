@@ -1,0 +1,9 @@
+package com.easy.controller;
+
+public class Hello {
+	
+	public String testHello() {
+		System.out.println("Hello");
+		return "";
+	}
+}

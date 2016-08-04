@@ -1,0 +1,23 @@
+package com.easy.controller;
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.easy.model.Book;
+
+@Controller								//注解声名controller
+public class BookController {
+
+	@RequestMapping("/add")				//注解声名跳转对象
+	public String add(Book book) {
+		//springMVC提供的，将类放进方法当做参数，通过依赖的方法
+		System.err.println("接到的值为"+book);
+		return "toIndex";
+	}
+	
+	@RequestMapping("select")
+	public String s(){
+		return "toIndex";
+	}
+}

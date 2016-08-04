@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="7">
+    <list key="modules" value0="Test20160725::org.eclipse.jst.jee.server:Test20160725::jst.web::3.0" value1="test20160726::org.eclipse.jst.jee.server:test20160726::jst.web::3.0" value2="test20160727::org.eclipse.jst.jee.server:test20160727::jst.web::3.0" value3="test20160729::org.eclipse.jst.jee.server:test20160729::jst.web::3.0" value4="优普20160801_Easy_book_SSM::org.eclipse.jst.jee.server:优普20160801_Easy_book_SSM::jst.web::2.5"/>
+  </server>
+</servers>

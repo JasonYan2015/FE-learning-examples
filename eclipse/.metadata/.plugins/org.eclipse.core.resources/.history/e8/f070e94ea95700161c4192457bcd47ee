@@ -1,0 +1,14 @@
+package com.easy.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller															//±êÊ¶¿ØÖÆÆ÷
+public class Hello {
+	
+	@RequestMapping("/a")
+	public String testHello() {
+		System.out.println("Hello,you are in.");
+		return "toIndex";
+	}
+}

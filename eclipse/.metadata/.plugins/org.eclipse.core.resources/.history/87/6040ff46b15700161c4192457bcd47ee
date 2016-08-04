@@ -1,0 +1,15 @@
+package com.easy.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller								//注解声名controller
+public class BookController {
+
+	@RequestMapping("/add")				//注解声名跳转对象
+	public String add() {
+		
+		
+		return "toIndex";
+	}
+}

@@ -1,0 +1,11 @@
+package com.easy.model;
+
+public class Book {
+	private int id;					//编号
+	private String bookname;		//书名
+	private String author;			//作者
+	private String press;			//出版社	
+	private String pressdate;		//出版时间
+	
+	
+}

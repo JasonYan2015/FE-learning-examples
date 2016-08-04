@@ -1,0 +1,12 @@
+package com.easy.test;
+
+public class Test2 {
+	
+	public static void main(String[] args) {
+		int a = 10;
+		int[] b = new int[5];		//工作中建议用此方法定义数组，便于看清定义类型
+		for (int i = 0; i < b.length; i++) {
+			System.out.println(b[i]);
+		}
+	}
+}

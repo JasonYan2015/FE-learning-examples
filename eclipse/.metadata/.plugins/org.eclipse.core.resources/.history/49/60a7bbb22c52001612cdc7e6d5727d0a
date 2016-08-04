@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS onclick event</title>
+	<style type="text/css">
+	
+	</style>
+</head>
+<body>
+	<input type="text">
+	<button>输入200</button><br>
+	<input type="text">
+	<button>输入400</button><br>
+	
+</body>
+</html>

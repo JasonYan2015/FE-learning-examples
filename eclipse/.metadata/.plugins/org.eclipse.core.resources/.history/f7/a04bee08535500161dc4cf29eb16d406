@@ -1,0 +1,9 @@
+package com.easy.model;
+
+public class Pv{
+
+	public int id;
+	public String  name;
+	
+	
+}

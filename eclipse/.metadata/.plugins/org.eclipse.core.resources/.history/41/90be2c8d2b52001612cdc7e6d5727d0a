@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body
+	{
+		font-famliy:"微软雅黑";
+		position:absolute;
+		left:50%;
+		top:50%;
+		display:block;
+		margin-left:-200px;
+		margin-top:-150px;
+	}
+	h1
+	{
+		font-family:"微软雅黑";
+		text-align: center;
+ 		background-color: maroon;
+ 		color: white;
+	}
+</style>
+</head>
+<body>
+	<h1>百度</h1>
+	<input type="text">
+	<button>百度一下</button><br><br>
+	<input type="image">
+	爱好：
+	<input type="checkbox">请选择
+	<input type="checkbox">篮球
+	<input type="checkbox">足球
+	<input type="checkbox">羽毛球
+	<input type="checkbox">乒乓球
+	<input type="radio" name="sex">男
+	<input type="radio" name="sex">女
+	<select>
+		<option>黑</option>
+		<option>吉</option>
+		<option>辽</option>
+	</select>
+</body>
+</html>

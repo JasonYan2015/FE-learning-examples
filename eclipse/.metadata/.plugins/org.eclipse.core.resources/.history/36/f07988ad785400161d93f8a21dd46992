@@ -1,0 +1,11 @@
+package com.easy.test;
+
+public class Test7 {
+	public static void main(String[] args) {
+		//调用Test6的方法
+		Test6.main(null);
+		int x = Test6.f3(34 , 56);
+		System.out.println(x);
+	}
+	
+}

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Mon Aug 01 16:06:50 CST 2016
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Jason\\workspace\\\u4F18\u666E20160801_Easy_book_SSM\\WebContent\\WEB-INF\\lib\\spring-web-3.2.0.RELEASE.jar=WEB-INF/lib/spring-web-3.2.0.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Jason\\workspace\\\u4F18\u666E20160801_Easy_book_SSM\\WebContent\\WEB-INF\\lib\\log4j-core-2.0-rc1.jar=WEB-INF/lib/log4j-core-2.0-rc1.jar

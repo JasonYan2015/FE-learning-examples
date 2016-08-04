@@ -1,0 +1,25 @@
+package com.easy.test;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		Test6.f1();
+		Test6.f2(2, 3);
+	}
+	//调用方法
+	//1.看static		有static-->用 类访问	CLASS名.方法名();
+	//	2.看参数			传入
+	public static void f1() {
+		System.out.println("f1");
+	}
+	
+	public static int f2(int a,int b) {
+		if (a>b) {
+			return a;
+		}
+		else {
+			return b;
+		}
+		//等同于syso(a > b ? a : b);
+	}
+}

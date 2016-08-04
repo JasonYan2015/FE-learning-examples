@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JS onclick event</title>
+	<style type="text/css">
+	body
+	{
+		font-famliy:"微软雅黑";
+		position:absolute;
+		left:50%;
+		top:50%;
+		display:block;
+		margin-left:-200px;
+		margin-top:-150px;
+	}
+	#exchange
+	{
+		width:278px;
+	}
+	</style>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var aBtn=document.getElementsByTagName("button");
+			var aTxt=document.getElementsByTagName("input");
+			
+/*			for(var i=0;i<aBtn.length;i++)
+				{
+					aBtn[i].onclick=function()
+					{
+						aTxt[i].value=(i*100);
+					};
+				};
+*/			
+			aBtn[0].onclick = function()
+			{
+				aTxt[0].value = 100;
+			}
+			aBtn[1].onclick = function()
+			{
+				aTxt[1].value = 400;
+			}
+			aBtn[2].onclick = function()
+			{
+				var temp = aTxt[0].value;
+				
+				aTxt[0].value = aTxt[1].value;
+				aTxt[1].value = temp;
+			}
+			aBtn[3].onclick = function()
+			{
+				//alert("hello");
+				for (var i = 0; i < 5; i++) {
+					alert("hello");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+<!-- 注释 -->
+	<input type="text">
+	<button>输入100</button><br>
+	<input type="text">
+	<button>输入400</button><br>
+	<button>交换</button>
+	<button>弹窗</button>
+</body>
+</html>
